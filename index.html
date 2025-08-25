@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yu-Gi-Oh Jo-Ken-Po Edition</title>
+  
+  <link rel="icon" type="image/x-icon" href="src/assets/cursor/Favicon.ico">
+  
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="src/styles/buttons.css">
+  <link rel="stylesheet" href="src/styles/containers_and_frames.css">
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="src/assets/video/yugi.mp4" type="video/mp4">
+  </video>
+
+  <div class="game-container">
+
+    <aside class="side-panel">
+      <div class="score">
+        <p>Win: <span id="win-count">0</span> | Lose: <span id="lose-count">0</span></p>
+      </div>
+      <div class="card-info">
+        <img id="card-preview" src="src/assets/icons/card-back.png" alt="Carta Selecionada">
+        <p id="card-name">---</p>
+        <p id="card-attr">---</p>
+      </div>
+    </aside>
+
+    <main class="battlefield">
+      <div class="enemy-hand enemy-hand-bg">
+        <img src="src/assets/icons/card-back.png" class="card">
+        <img src="src/assets/icons/card-back.png" class="card">
+        <img src="src/assets/icons/card-back.png" class="card">
+        <img src="src/assets/icons/card-back.png" class="card">
+        <img src="src/assets/icons/card-back.png" class="card">
+      </div>
+
+      <div class="arena">
+        <div class="slot enemy-slot"></div>
+        <img src="src/assets/icons/millenium2.png" class="eye">
+        <div class="slot player-slot"></div>
+      </div>
+
+      <div class="player-hand player-hand-bg">
+        <img src="src/assets/icons/dragon.png" class="card selectable" 
+             data-name="Blue-Eyes White Dragon" data-attr="Dragon">
+        <img src="src/assets/icons/magician.png" class="card selectable" 
+             data-name="Dark Magician" data-attr="Spellcaster">
+        <img src="src/assets/icons/exodia.png" class="card selectable" 
+             data-name="Exodia" data-attr="Divine">
+        <img src="src/assets/icons/dragon.png" class="card selectable" 
+             data-name="Blue-Eyes White Dragon" data-attr="Warrior">
+        <img src="src/assets/icons/magician.png" class="card selectable" 
+             data-name="Dark Magician" data-attr="Dragon">
+      </div>
+    </main>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="src/assets/audios/egyptian_duel.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="win-sound">
+    <source src="src/assets/audios/win.wav" type="audio/wav">
+  </audio>
+  <audio id="lose-sound">
+    <source src="src/assets/audios/lose.wav" type="audio/wav">
+  </audio>
+
+  <script src="src/scripts/engine.js"></script>
+</body>
+</html>

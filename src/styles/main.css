@@ -1,0 +1,167 @@
+#bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.game-container {
+  display: flex;
+  height: 100vh;
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.side-panel {
+  width: 250px;
+  background: url("../assets/rpg/border-image-golden2.png") no-repeat center/cover;
+  border-right: 3px solid gold;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.side-panel .score {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.card-info img {
+  width: 120px;
+  border: 2px solid gold;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  margin: 5px 0;
+}
+
+.battlefield {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(139,69,19,0.2);
+  position: relative;
+}
+
+.arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin: auto;
+  z-index: 1;
+}
+
+.slot {
+  width: 120px;
+  height: 180px;
+  border: 2px dashed gold;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye {
+  width: 200px;
+}
+
+.enemy-hand, .player-hand {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.enemy-hand {
+  margin-bottom: 10px;
+}
+
+.player-hand {
+  margin-top: 10px;
+}
+
+.card, .card-frame {
+  width: 120px;
+  height: 160px;
+  background: url("src/assets/icons/card-front.png") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover, .card-frame:hover {
+  transform: scale(1.1);
+}
+
+.card img, .card-frame img {
+  width: 80%;
+  height: auto;
+}
+
+.card.selectable {
+  border: 2px solid gold;
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+}
+
+.card.selectable:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px gold;
+}
+
+.card.selectable.selected {
+  border: 3px solid cyan;
+  box-shadow: 0 0 25px cyan;
+  transform: scale(1.15);
+}
+.player-hand {
+  margin-top: 10px;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+  max-width: 100%;
+}
+
+.enemy-hand.enemy-hand-bg {
+  background: url("../assets/rpg/border-image.png") no-repeat center center;
+  background-size: 120% 120%;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.player-hand.player-hand-bg {
+  background: url("../assets/rpg/border-image.png") no-repeat center center;
+  background-size: 120% 120%;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  width: 100px;
+  height: auto;
+}
+
+
+
