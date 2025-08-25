@@ -55,4 +55,4 @@ Iniciantes em desenvolvimento web com foco em HTML/CSS/JS
 Rodrigo Resende Andrade Silva
 
 💻 GitHub: [https://github.com/Rodrigoras10](https://github.com/Rodrigoras10)  
-🔗 LinkedIn: [https://wwwww.linkedin.com/in/rodrigo-andrade89ti)
+🔗 LinkedIn: [https://www.linkedin.com/in/rodrigo-andrade89ti)
