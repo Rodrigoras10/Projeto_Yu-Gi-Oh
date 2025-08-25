@@ -48,7 +48,11 @@ Fãs de Yu-Gi-Oh que querem entender melhor como funciona a lógica de jogos sim
 
 Iniciantes em desenvolvimento web com foco em HTML/CSS/JS
 
-📄 Licença
+---
 
-Este projeto está licenciado sob a MIT License
-.
+### Autor
+
+Rodrigo Resende Andrade Silva
+
+💻 GitHub: [https://github.com/Rodrigoras10](https://github.com/Rodrigoras10)  
+🔗 LinkedIn: [https://wwwww.linkedin.com/in/rodrigo-andrade89ti)
